@@ -27,7 +27,10 @@ class BooksController < ApplicationController
   def create
     @book = current_user.books.new(book_params)
     @book.save
-    respond_with(@book)
+    respond_to do |format|
+      format.html { redirect_to books_url, notice: 'Book was successfully destroyed.' }
+      format.json { head :no_content }
+    end
   end 
 
   # PATCH/PUT /books/1
