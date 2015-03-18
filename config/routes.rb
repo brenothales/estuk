@@ -4,6 +4,8 @@ Rails.application.routes.draw do
   devise_for :users
   get 'pages/home'
   get 'dashboard' => "pages#dashboard"
+  post '/buy/:slug', to: 'transactions#create', as: :buy
+  get '/pickup/:guid', to: 'transactions#pickup', as: :pickup 
   root "pages#home"
 
 
