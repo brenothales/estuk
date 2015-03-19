@@ -58,5 +58,10 @@ group :development, :test do
   gem 'spring'
 end
 
+group :production do
+	gem 'rails_12factor'
+	gem 'pg'
+end 
+
 gem 'web-console', '~> 2.0'
   # gem 'aws-sdk', '< 2.0'
