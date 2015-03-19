@@ -30,7 +30,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 # Use Unicorn as the app server
 # gem 'unicorn'
-gem 'font-awesome-sass', '~> 4.2.0'
+# gem 'font-awesome-sass'
+
 
 gem 'autoprefixer-rails'
 gem 'simple_form'
